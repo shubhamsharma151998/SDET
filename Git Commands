@@ -1,0 +1,9 @@
+-------Git Commands------------
+
+Create a new branch names "comprehensive_basic_2" locally
+git checkout -b comprehensive_basic_2
+
+The changes are staged and committed
+git add .
+git commit -m "First Commit"
+git push origin comprehensive_basic_2
