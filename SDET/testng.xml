@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+     <class name="question_No_5.Question3_TestNGImplementation"/>
+      <class name="question_No_5.Question4_TestNGAnswerWithPrioirty"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
