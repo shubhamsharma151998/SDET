@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "bdb14640-e53b-4326-9bf1-026635db5cf4",
+		"name": "Question",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31625346"
+	},
+	"item": [
+		{
+			"name": "https://restcountries.com/v3.1/name/India",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", () => {\r",
+							"  pm.expect(pm.response.code).to.eql(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200\", () => {\r",
+							"  pm.expect(pm.response.code).to.eql(201);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Successful POST request\", () => {\r",
+							"  pm.expect(pm.response.code).to.be.oneOf([201,200]);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/name/India",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"name",
+						"India"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
